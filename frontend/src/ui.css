@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap");
+
+body { font-family: "Atkinson Hyperlegible", system-ui, sans-serif; }
+
+/* The slider track is painted by TimeSlider: green/amber/red = state of the selected route */
+.time-slider { -webkit-appearance: none; appearance: none; height: 16px; border-radius: 8px; background: var(--track); outline-offset: 4px; }
+.time-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 28px; height: 28px; border-radius: 50%; background: #f8fafc; border: 4px solid #020617; box-shadow: 0 1px 4px rgba(0,0,0,.4); cursor: grab; }
+.time-slider::-moz-range-thumb { width: 22px; height: 22px; border-radius: 50%; background: #f8fafc; border: 4px solid #020617; cursor: grab; }
+@media (prefers-reduced-motion: no-preference) { .time-slider::-webkit-slider-thumb { transition: transform .1s; } .time-slider:active::-webkit-slider-thumb { transform: scale(1.15); } }
+.leaflet-tooltip { background: #0f172a; color: #e2e8f0; border: 1px solid #334155; font-weight: 700; }
+.leaflet-tooltip-top:before { border-top-color: #0f172a; }
+.leaflet-container { background: #020617; }
